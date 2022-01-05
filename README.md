@@ -92,6 +92,8 @@ The original code runs through the entire data set for each individual variable.
 ```
 By creating arrays on the refactored version, the volumes, starting prices and ending prices could be established for all applicable tickers in one run. Eliminating the having to run through the data one time each individual ticker. Arrays allow for the ticker to change once the the last variable in the data set is found, instead of having to completely run through everything before changing. The variable `tickerindex' is able to able change as soon as the last applicable row is found. 
 
+###Runtimes of codes before and after refactoring
+
 
 
 
