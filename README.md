@@ -92,8 +92,32 @@ The original code runs through the entire data set for each individual variable.
 ```
 By creating arrays on the refactored version, the volumes, starting prices and ending prices could be established for all applicable tickers in one run. Eliminating the having to run through the data one time each individual ticker. Arrays allow for the ticker to change once the the last variable in the data set is found, instead of having to completely run through everything before changing. The variable `tickerindex' is able to able change as soon as the last applicable row is found. 
 
-###Runtimes of codes before and after refactoring
+### Runtimes of codes before and after refactoring
 
+#### Original Version
+
+![Original 2017](https://github.com/Andrewjruble/stocks-analysis/blob/main/Resources/VBA_Challenge_Orig2017.PNG)
+![Original 2018](https://github.com/Andrewjruble/stocks-analysis/blob/main/Resources/VBA_Challenge_Orig2018.PNG)
+
+#### Refactored 
+
+![Refactored 2017](https://github.com/Andrewjruble/stocks-analysis/blob/main/Resources/VBA_Challenge_2017.PNG)
+![Refactored 2018](https://github.com/Andrewjruble/stocks-analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
+
+Looking at the times of the original vs the refactored version, both years ran about a half second faster on the latter. 
+
+## Summary
+
+There can be many advantages to refactoring code, simplyfying it or improving the logic can:
+
+       - Make the code run faster
+       - Make it more efficient and take up less memory
+       - Make it easier to follow to future users
+ 
+ However, refactoring can have disadvantages and may not always be worth it do. The code could already be very simple, useful and easy to understand. There's a chance hours could be wasted trying to improve things only end up with minor or no improvements.
+ 
+ When looking at our code, it could be argued the value is subjective. It was proven the newer version runs faster and could be theorized that it takes up less memory. This would an advantage if this was applied to a larger data set, or if several tickers needed to be evaulated. In that instance, getting results may crash the program or take too long using the original code. 
+       
 
 
 
